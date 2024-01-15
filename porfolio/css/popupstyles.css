@@ -1,0 +1,353 @@
+html {
+  --color-heading: #c4cfde;
+  --color-heading-wv: #1e2125;
+  --color-body: #878e99;
+  --color-body-white: #3c3e41;
+  --color-lightn: #c4cfde;
+  --color-midgray: #878787;
+  --color-light: #e4e6ea;
+  --poppins: "poppins", sans-serif;
+  --color-lighter: #ced0d400;
+  --color-lightest: #f0f2f5;
+  --color-secondary: #ff014f;
+  --color-primary-gradient-from: #6a67ce;
+  --color-primary-gradient-to: #fc636b;
+  --box-shadow: 10px 10px 19px #15161a, -10px -10px 19px #262a2e;
+  --border-radius: 10px;
+  --box-background: linear-gradient(to right bottom, #212428, #16181c);
+  --background-color-box: linear-gradient(
+    145deg,
+    var(--color-primary-gradient-from) 0%,
+    var(--color-primary-gradient-to) 100%
+  );
+}
+
+.pop-overlay {
+  /* display: none; */
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.825);
+  z-index: 1;
+  overflow: auto;
+}
+
+.pop-up {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 90vh;
+  width: 130vh;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  border-radius: var(--border-radius);
+  background-color: var(--color-heading-wv);
+  overflow: auto;
+  scrollbar-width: thin;
+  box-shadow: var(--box-shadow);
+  margin: 2rem auto;
+  margin-bottom: 2rem;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  border-radius: 50%;
+}
+
+.close-icon:hover {
+  transform: translateY(0.5rem);
+  box-shadow: 10px 10px 19px #101113, -10px -10px 19px #4b545c;
+  transition: 0.7s;
+}
+
+.close-icon img {
+  height: 1.2rem;
+}
+
+.pop-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin: 3rem auto;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+}
+
+.pop-img {
+  border-radius: var(--border-radius);
+}
+
+.pop-img img {
+  height: 25rem;
+  width: 30rem;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.pop-head-text h2 {
+  font-size: 2.125rem;
+  font-family: "montserrat", sans-serif;
+  color: var(--color-lightn);
+}
+.pop-head-text p {
+  text-transform: none;
+  text-align: left;
+  font-family: "poppins", sans-serif;
+  color: var(--color-body);
+  padding-bottom: 1.3rem;
+}
+
+.xtramile-container span{
+  font-weight: 600;
+  color: var(--color-lightn);
+}
+.xtramile-container li{
+  color: var(--color-body);
+}
+.xtramile-container ol li {
+  margin-top: 1rem;
+  color: var(--color-lightn);
+  
+}
+
+.xtramile-container ul li{
+  list-style-type: disc;
+  margin-top: 1rem;
+  color: var(--color-body)
+}
+.list{
+  font-size: 1.4rem;
+  color: var(--color-secondary);
+  text-align: center;
+}
+
+.pop-client-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pop-client-info span {
+  font-weight: 600;
+  color: var(--color-lightn);
+}
+
+.pop-body-img{
+  display: flex;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  box-sizing: border-box;
+  object-fit: contain;
+  margin:1rem 2rem 1rem 2rem;
+}
+.pop-body-img img{
+ height: 60vh;
+ border-radius: 12px;
+ box-sizing: border-box;
+  object-fit: contain;
+}
+.text-button {
+  display: flex;
+}
+.text-button a {
+  border: none;
+  text-decoration: none;
+  background-color: var(--color-heading-wv);
+  color: var(--color-secondary);
+  font-size: 0.8rem;
+  font-family: "poppins", sans-serif;
+  border-radius: 7px;
+  box-shadow: var(--box-shadow);
+  padding: 1rem;
+  margin-right: 2rem;
+  font-family: "poppins", sans-serif;
+}
+
+.text-button a:hover {
+  background: var(--box-background);
+  transform: translateY(-0.6rem);
+  transition: 0.7s;
+}
+.xtramile-container > p {
+  color: var(--color-body);
+  text-transform: none;
+  text-align: left;
+  margin: 3rem 2rem;
+}
+
+.popupcta {
+  text-align: center;
+  margin-bottom: 2rem;
+  transition: 0.8s;
+}
+
+.popupcta a {
+  text-decoration: none;
+  color: var(--color-lightest);
+  background: linear-gradient(90deg, #e62cab 0%, #e02b62 100%);
+  border-radius: 15px;
+  padding: 0.8rem 2rem;
+  font-family: var(--poppins);
+  text-align: center;
+  font-size: 0.94rem;
+  font-weight: 500;
+  transition: 0.8s;
+}
+
+.popupcta a:hover {
+  background: var(--color-lightest);
+  color: var(--color-secondary);
+  transition: 0.8s ease-in-out;
+}
+
+.socialsbar {
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  bottom: 50%;
+  left: 0;
+  /* box-shadow: var(--box-shadow); */
+  width: 4rem;
+}
+
+.socialsbar > div {
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  background-color: var(--color-heading);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.6rem;
+  padding: 0.5rem;
+  transition: 0.8s;
+  cursor: pointer;
+}
+.socialsbar > div:hover{
+  background-color: var(--color-body-white);
+  transition: 0.8s;
+}
+
+
+/* .side-fb,
+.side-twitter,
+.side-linkedin,
+.side-insta {
+  
+} */
+.socialsbar img {
+  height: 1.5rem;
+  
+}
+
+@media screen and (min-width: 268px) and (max-width: 1120px) {
+  .pop-up{
+    width: 100%;
+    height: 90%;
+  }
+
+  .pop-header{
+    grid-template-columns: 1fr;
+  }
+  .pop-img img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 268px) and (max-width: 440px) {
+  .pop-up{
+    width: 375px;
+    margin: 0 auto;
+    left: 0;
+    top: 0rem;
+    transform: translate(0, 0);
+    padding: 0px;
+    height: 100%;
+    
+   
+  }
+
+  .pop-body-img{
+    align-items: center;
+    overflow: hidden;
+  }
+  
+
+  .pop-body-img img{
+    height: 20rem;
+    width: auto;
+  }
+}
+
+
+
+
+/* <div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div> */
+
+html{
+  --swiper-scrollbar-border-radius: 10px;
+  --swiper-scrollbar-top: auto;
+  --swiper-scrollbar-bottom: 4px;
+  --swiper-scrollbar-left: auto;
+  --swiper-scrollbar-right: 4px;
+  --swiper-scrollbar-sides-offset: 1%;
+  --swiper-scrollbar-bg-color: rgba(0, 0, 0, 0.1);
+  --swiper-scrollbar-drag-bg-color: rgba(0, 0, 0, 0.5);
+  --swiper-scrollbar-size: 4px;
+  --swiper-theme-color: #ff014f;
+}
+:root{
+  --swiper-theme-color: #ff014f;
+}
+
+.swiper {
+  width: 42rem;
+  height: auto;
+  object-fit: cover;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ff014f; /* Example: Red color */
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: #ff014f; /* Example: Green color */
+}
+.swiper-pagination-bullets{
+  margin-bottom: -2rem;
+  background-color: transparent;
+}
