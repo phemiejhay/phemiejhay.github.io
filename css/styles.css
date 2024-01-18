@@ -1460,7 +1460,7 @@ footer {
 
 .footer-copywrite p {
   color: var(--color-body);
-  font-size: 1.125rem;
+  font-size: 0.92 rem;
   text-align: center;
   font-family: "poppins", sans-serif;
   margin: 2rem 0;
