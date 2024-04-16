@@ -1,0 +1,206 @@
+html {
+  --color-heading: #c4cfde;
+  --color-heading-wv: #1e2125;
+  --color-body: #878e99;
+  --color-body-white: #3c3e41;
+  --color-lightn: #c4cfde;
+  --color-midgray: #878787;
+  --color-light: #e4e6ea;
+  --poppins: "poppins", sans-serif;
+  --montserrat: "montserrat", sans-serif;
+  --color-lighter: #ced0d400;
+  --color-lightest: #f0f2f5;
+  --color-secondary: #ff014f;
+  --color-green: #ff014f;
+  --color-light-purple: #ff014f;
+  --color-blue: #ff014f;
+  --color-primary-gradient-from: #6a67ce;
+  --color-primary-gradient-to: #fc636b;
+  --box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  --border-radius: 10px;
+  --box-background: linear-gradient(to right bottom, #212428, #16181c);
+  --background-color-box: linear-gradient(
+    145deg,
+    var(--color-primary-gradient-from) 0%,
+    var(--color-primary-gradient-to) 100%
+  );
+}
+
+* {
+  font-family: var(--poppins);
+  font-size: 1rem;
+  color: var(--color-body);
+}
+
+.blogpage {
+  color: var(--color-lightn);
+  margin: 3rem auto;
+  width: 75%;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 3rem;
+}
+
+.img-description {
+  color: var(--color-lightn);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.blogpage h1 {
+  font-size: 1.8rem;
+  color: var(--color-lightn);
+}
+
+.blogpage > h1 {
+  font-family: var(--montserrat);
+  font-size: 2.5rem;
+  color: var(--color-lightn);
+}
+
+.blogpage-head-img {
+  height: auto;
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+.blogpagemid-img {
+  height: auto;
+  width: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto 1rem auto;
+  box-shadow: var(--box-shadow);
+}
+
+.blogpagemid-img img{
+    box-shadow: var(--box-shadow);
+}
+
+.blog-cta {
+  margin: 4rem auto;
+  width: 92%;
+}
+.blog-cta p {
+  color: var(--color-lightn);
+}
+.blog-cta h1 {
+  font-family: var(--montserrat);
+  /* text-align: center; */
+}
+
+.blog-cta a {
+  text-transform: uppercase;
+  padding: 0.7rem 1.5rem;
+  border: 2px solid var(--color-secondary);
+  color: var(--color-secondary);
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  font-family: var(--montserrat);
+  transition: all 1s;
+  font-weight: 550;
+  margin: 1.2rem auto;
+}
+
+.blog-cta a:hover {
+  color: var(--color-heading-wv);
+  background-color: var(--color-lightn);
+  border-color: var(--color-lightn);
+  transition: all 1s;
+}
+
+.blogpage-head-img img,
+.blogpagemid-img img {
+  height: auto;
+  width: 100%;
+  display: block;
+  justify-content: center;
+  border-radius: var(--border-radius);
+}
+
+.sub-blogsection {
+  background-color: var(--box-background);
+  box-shadow: var(--box-shadow);
+  padding: 1rem;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  border-radius: var(--border-radius);
+}
+.sect-quote img {
+  height: 6rem;
+}
+
+.sub-blogsection p {
+  padding-top: 1rem;
+}
+
+.blog-date {
+  color: var(--color-lightn);
+  font-weight: 500;
+}
+
+li{
+    color: var(--color-lightn);
+    font-weight: 500;
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 810px) {
+    .blogpagemid-img {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto 1rem auto;
+        box-shadow: var(--box-shadow);
+      }
+
+      
+      .blogpage h1 {
+        font-size: 1.8rem;
+      }
+      
+      .blogpage > h1 {
+        
+        font-size: 2.5rem;
+        
+      }
+}
+
+@media screen and (min-width: 200px) and (max-width: 789px) {
+    .blogpagemid-img {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto 1rem auto;
+        box-shadow: var(--box-shadow);
+      }
+
+      .blogpage{
+        padding: 1rem;
+        margin: 2rem 0 0 0;
+        width: 92%;
+        
+      }
+
+      .blogpage p{
+        font-size: 14px;
+      }
+
+      .blogpage h1 {
+        font-size: 1.5rem;
+        
+      }
+      
+      .blogpage > h1 {
+        font-size: 1.8rem;
+        
+      }
+}

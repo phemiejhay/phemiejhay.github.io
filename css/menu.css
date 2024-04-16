@@ -21,6 +21,45 @@ html {
     var(--color-primary-gradient-to) 100%
   );
 }
+
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 50%;
+}
+
+::-webkit-scrollbar-track {
+  background: #030000;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(0deg, #e62cab 0%, #e02b62 100%);
+  border-radius: 15px;
+}
+
+.gradient-border:after {
+  content: "";
+  /* position: relative;
+  top: 0;
+  left: 0; */
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+  border-radius: 50%;
+  z-index: 1;
+  animation: animatedgradient 2s ease alternate infinite;
+  background-size: 300% 300%;
+  transform: translate(-50%, -50%);
+}
 .menupop-overlay {
   /* display: none; */
   display: none;
@@ -41,10 +80,10 @@ html {
   top: 0;
   left: 0;
   width: 40vh;
-  height: 90vh;
+  height: 100vh;
   background-color: var(--color-heading-wv);
   color: var(--color-lightn);
-  padding: 3.2rem;
+  padding: 1.2rem;
   font-size: 1rem;
   font-family: "poppins", sans-serif;
   overflow: auto;

@@ -248,13 +248,15 @@ header span {
   color: #ff014f;
   font-size: 3.125rem;
 }
-.header-image button {
+.header-image a {
   width: 40%;
   display: none;
   align-items: center;
   margin: 3rem auto;
   font-size: 1.2rem;
   font-weight: 400;
+  text-decoration: none;
+  border: 2px solid var(--color-secondary);
   text-transform: uppercase;
   color: var(--color-secondary);
   font-family: "poppins", sans-serif;
@@ -265,7 +267,7 @@ header span {
   transition: 0.7s;
 }
 
-.header-image button:hover {
+.header-image a:hover {
   background: linear-gradient(145deg, #e2e8ec, #ffffff);
   border-color: transparent;
   font-weight: 400;
@@ -399,7 +401,7 @@ hr {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3rem 3rem;
-  margin: 2rem 0rem;
+  margin: 4rem 0rem;
   transition: 0.8s;
 }
 
@@ -533,6 +535,11 @@ hr {
   transition: 0.9s;
 }
 
+.portfolio-container h2 a{
+  text-decoration: none;
+  color: var(--color-lightn);
+}
+
 .portfolio-container h2:hover {
   color: #ff014f;
   transition: 0.9s;
@@ -566,6 +573,44 @@ hr {
   grid-template-columns: 1fr 1fr;
   gap: 0rem;
 }
+.blogz-btn{
+  display: flex;
+  justify-content: center;
+}
+.more-blogs-btn{
+  text-decoration: none;
+  color: #ffffff;
+  background-color: var(--color-secondary);
+  border-radius: 10rem/* var(--border-radius) */;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  box-shadow: var(--box-shadow);
+  transition: 1s;
+  cursor: pointer;
+}
+.containertag{
+  transition: color 1s;
+}
+.containertag:hover{
+  color: var(--color-secondary);
+  transition: color 1s;
+}
+
+.more-blogs-btn:hover{
+  background-color: var(--color-lightn);
+  color: var(--color-secondary);
+  transition: background-color 1s;
+  transition: color 1s;
+  transform: translateY(-0.8rem);
+  transition: transform 1s;
+}
+
+/* .portfolio button{
+  
+} */
 
 /* <!--     resume resume resume resumeresume resume resume resumeresume resume resume resumeresume resume resume resume
 resume resume resume resumeresume resume resume resumeresume resume resume resumeresume resume resume resume
@@ -1640,7 +1685,7 @@ footer {
     margin: 1rem auto;
     transition: 0.7s;
   }
-  .header-image button {
+  .header-image a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1698,7 +1743,7 @@ footer {
     width: 100%;
     /* margin: 2rem auto; */
   }
-  .header-image button {
+  .header-image a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1871,5 +1916,9 @@ footer {
    grid-template-columns: 1fr 1fr 1fr;
    gap: 1rem;
    width: 100%;
+  }
+
+  .portfolio-container{
+    padding: 1rem;
   }
 }
