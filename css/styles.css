@@ -1891,6 +1891,10 @@ footer {
     margin-left: 1rem;
     height: 2.5rem;
   }
+
+  section p, .client-text-container p, .education-description, .main-footer a {
+    font-size: 14px;
+  }
   .header-image button {
     display: flex;
     align-items: center;
